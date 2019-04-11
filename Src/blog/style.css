@@ -28,3 +28,7 @@ P {
     margin: auto;
 }
 
+P:first-letter {
+    font-size: 200%;
+    color: black;
+  }
