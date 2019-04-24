@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href= "style.css">
+    <link rel="stylesheet" href= "style.css">
+    <link rel="stylesheet" media="(max-width: 400px)" href="mobile-style.css" />
+    <link rel="stylesheet" media="(max-width: 800px)" href="mobile-style.css" />
+    <link rel="stylesheet" media="(max-width: 400px)" href="tablet-style.css" />
+    <link rel="stylesheet" media="(max-width: 800px)" href="tablet-style.css" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Portfolio</title>
 </head>
   <body>
       <header>
-          <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"logo" alt="austin coding academy logo">
-          <nav> <a class="has-border">Resume <a class="has-border">About Me<a class="has-border"> 
-            My Blog <a class="has-border">Contact Me</a></nav>
-        </header>
+          <div class= "Logo">
+            <img src="https://cdn.evbuc.com/eventlogos/188084824/acastandardcirclefullname.png"logo" alt="austin coding academy logo">
+          </div>
+          <div class= "Nav">
+            <nav> 
+            <a class ="has-border">Resume</a>  
+            <a class="has-border">About Me</a>
+            <a class="has-border"> My Blog </a>
+            <a class="has-border">Contact Me</a>
+          </nav>
+        </div>
+      </header>
         <main>
           <img src="./myProfilePic.JPG" id="profile-pic" alt="Head shot of Me">
-           <button id="portfolio">Portfolio</button>
-             <h1>Angelica Hopkins</h1>
-                <h2>Student of Web Development</h2>
-          <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
-          </main>
+              <button id="portfolio">Portfolio</button>
+                <h1>Angelica Hopkins</h1>
+                  <h2>Student of Web Development</h2>
+            </div>
+                <a class="small-text" href="https://austincodingacademy.com/">© Austin Coding Academy</a>
+            </div>
+        </main>
   </body>
 </html>
