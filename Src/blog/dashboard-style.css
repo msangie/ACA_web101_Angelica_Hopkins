@@ -1,19 +1,35 @@
+.container {
+  display: grid;
+  grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "aside"
+    "banner"
+    "footer";
+}
+
 header {
-    Background-color: pink;
     grid-area: header;
+    font-size: 45px;
+    font-style: Tahoma; 
+    Color: white; 
+    display: flex;
+    justify-content: center;
   }
   main {
     min-height: calc(100vh - 54px);
     grid-area: main;
-    font-size: 40px;
+    font-size: 45px;
     font-style: Tahoma; 
     Color: white; 
-    margin: 120px; 
+    margin: 100px; 
   }
 
 
   body  {
-    background-color: pink;
+    background-image: url("https://wallpapercave.com/wp/wp2617529.jpg");
+  
 
   }
   .parent {
@@ -31,28 +47,164 @@ header {
 p {
   font-size: 100px; 
 }
-  nav {
+  .time {
+    grid-area: main; 
+    display: grid; 
+    grid-template-columns: 1fr; 
+    height: 60%;
+    width: 60%; 
+    background-color: black; 
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr; 
+  
+  }
+  .notepad {
     grid-area: nav;
+    display: grid; 
+    grid-template-columns: 1fr;
+    height: 35%; 
+    background-color: white; 
+
+  }
+  .lines {
+    grid-column: 1/2; 
+    border-bottom: solid 1px lightblue; 
   }
   aside {
     grid-area: aside;
     display: grid; 
     
   }
+/* start of calculator */
+  .calc {
+    grid-area: calc;
+    height: 50%; 
+    background-color: black;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr; 
+
+  }
+  .calc-screen {
+    grid-column: 1 / 5; 
+    grid-row: 1 / 2;
+    background-color: gray;
+  }
+  #clearbutton {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3; 
+    background-color: black; 
+    color: white; 
+
+  }
+  #mplus {
+    grid-column: 2/3; 
+    grid-row: 2/3; 
+    background-color: black; 
+    color: white; 
+  }
+  #division {
+    grid-column: 3 / 4; 
+    grid-row: 2/ 3; 
+    background-color: black; 
+    color: white; 
+  }
+  #multiply {
+    grid-column: 4 / 5; 
+    grid-row: 2 / 3; 
+    background-color: black; 
+    color: white; 
+
+  }
+  #seven {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4; 
+    background-color: black; 
+    color: white;  
+  }
+  #eight {
+    grid-column: 2 / 3; 
+    grid-row: 3 / 4; 
+    background-color: black; 
+    color: white;  
+  }
+  #nine {
+    grid-column: 3 / 4; 
+    grid-row: 3 / 4; 
+    background-color: black; 
+    color: white;  
+  }
+  #minus {
+    grid-column: 4 / 5; 
+    grid-row: 3 / 4; 
+    background-color: black; 
+    color: white;  
+  }
+  #four {
+    grid-column: 1 / 2; 
+    grid-row: 4 / 5; 
+    background-color: black; 
+    color: white;  
+  }
+  #five {
+    grid-column: 2 / 3; 
+    grid-row: 4 / 5; 
+    background-color: black; 
+    color: white;  
+  }
+  #six {
+    grid-column: 3 / 4; 
+    grid-row: 4 / 5; 
+    background-color: black; 
+    color: white;  
+  }
+  #plus {
+    grid-column: 4 / 5; 
+    grid-row: 4 / 5; 
+    background-color: black; 
+    color: white; 
+  }
+  #one {
+    grid-column: 1 / 2; 
+    grid-row: 5 / 6; 
+    background-color: black; 
+    color: white; 
+  }
+  #two {
+    grid-column: 2 / 3; 
+    grid-row: 5 / 6; 
+    background-color: black; 
+    color: white; 
+  }
+  #three {
+    grid-column: 3 / 4; 
+    grid-row: 5 / 6; 
+    background-color: black; 
+    color: white; 
+  }
+  #equal {
+    grid-column: 4 / 5; 
+    grid-row: 5 / 7; 
+    background-color: black; 
+    color: white; 
+  }
+  #zero {
+    grid-column: 1 / 3; 
+    grid-row: 6 / 7; 
+    background-color: black; 
+    color: white; 
+  }
+  #point {
+    grid-column: 3 / 4; 
+    grid-row: 6 / 7;
+    background-color: black;
+    color: white; 
+  }
+  /* end of calculator */
   .banner {
     grid-area: banner;
   }
   
-  .container {
-    display: grid;
-    grid-template-areas: 
-      "header"
-      "nav"
-      "main"
-      "aside"
-      "banner"
-      "footer";
-  }
   
   @media (min-width: 500px) {
     .container {
@@ -60,7 +212,7 @@ p {
       grid-template-areas: 
         "header  header"
         "nav     nav"
-        "aside   main"
+        "main   calc"
         "banner  footer";
     }
     nav ul {
@@ -74,7 +226,7 @@ p {
       grid-template-columns: 1fr 4fr 1fr;
       grid-template-areas: 
         "header header  header"
-        "nav    main    aside"
+        "nav    main    calc"
         "nav    main    banner"
         "footer footer  footer"
      }
