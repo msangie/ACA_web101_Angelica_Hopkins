@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard</title>
     <link rel="stylesheet" href="dashboard-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="todo.js"></script>
 </head>
 <body>
     <div class="container">
@@ -13,31 +16,15 @@
       <header>
         <h1>Welcome</h1>
       </header>
-       <div class="notepad">
-        <div class="lines">
-        </div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-        <div class="lines"></div>
-      </div>
+      <ul>
+        <li class="item">Groceries</li>
+      </ul>
+       <form id="newItemForm">
+         <input type="text" id="name" placeholder="Item">
+         <input type="submit" id="add" value="add">
+       </form>
       <main>
-        <div class="time">
-        </div>
-        <p>12:00 PM</p>
+        <div class="clock"></div>
       </main>
       <div class="calc">
         <div class="calc-screen"></div>
@@ -64,8 +51,16 @@
       </div>
       <aside>
       </aside>
+      <script> 
+        </script>
         <div class="banner">div.banner</div>
+        <button id = "find-me">Show my location</button><br/>
+        <p id = "status"></p>
+        <a id = "map-link" target="_blank"></a>
         <footer></footer>
-    </div>   
+    </div> 
+      <div>
+       
+      </div>  
   </body>
   </html>

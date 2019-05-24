@@ -9,10 +9,10 @@
     "footer";
 }
 
-header {
+  header {
     grid-area: header;
     font-size: 45px;
-    font-style: Tahoma; 
+    font-family: 'Monoton', cursive;
     Color: white; 
     display: flex;
     justify-content: center;
@@ -28,9 +28,7 @@ header {
 
 
   body  {
-    background-image: url("https://wallpapercave.com/wp/wp2617529.jpg");
-  
-
+    background-image: url("https://images-na.ssl-images-amazon.com/images/I/81AuAKsUwjL._SL1500_.jpg");
   }
   .parent {
     display: grid;
@@ -47,34 +45,62 @@ header {
 p {
   font-size: 100px; 
 }
-  .time {
-    grid-area: main; 
-    display: grid; 
-    grid-template-columns: 1fr; 
-    height: 60%;
-    width: 60%; 
-    background-color: black; 
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr; 
-  
+.clock {
+  width: 256px;
+  height: 256px;
+  border: 8px solid white;
+  border-radius: 55%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -128px 0 0 -128px;
+  box-shadow:0 0 16px rgba(0,150,255,0.3) inset
+}
+
+.clock:before,
+.clock:after {
+  content: "";
+  position: absolute;
+  height: 70px;
+  width: 8px;
+  background: rgba(0,0,0,0.75);
+  border-radius: 4px;
+  left: 50%;
+  bottom: 128px;
+  margin: 0 0 0 -4px;
+  transform-origin: bottom;
+  animation-name: Clock;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+    box-shadow:0 16px 0px rgba(0,0,0,0.75)
+}
+
+.clock:before {
+  animation-duration: 720s;
+  height:96px;
+}
+.clock:after {
+  animation-duration: 60s;
+  height:120px;
+}
+@keyframes Clock {
+  0% {
+    transform: rotate(0deg)
   }
-  .notepad {
+  100% {
+    transform: rotate(360deg)
+  }
+}
+/* start of list */
+  #newitemform {
     grid-area: nav;
     display: grid; 
     grid-template-columns: 1fr;
-    height: 35%; 
+    height: 45px; 
     background-color: white; 
 
   }
-  .lines {
-    grid-column: 1/2; 
-    border-bottom: solid 1px lightblue; 
-  }
-  aside {
-    grid-area: aside;
-    display: grid; 
-    
-  }
+  
 /* start of calculator */
   .calc {
     grid-area: calc;
@@ -93,112 +119,112 @@ p {
   #clearbutton {
     grid-column: 1 / 2;
     grid-row: 2 / 3; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
 
   }
   #mplus {
     grid-column: 2/3; 
     grid-row: 2/3; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #division {
     grid-column: 3 / 4; 
     grid-row: 2/ 3; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #multiply {
     grid-column: 4 / 5; 
     grid-row: 2 / 3; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
 
   }
   #seven {
     grid-column: 1 / 2;
     grid-row: 3 / 4; 
-    background-color: black; 
-    color: white;  
+    background-color: white; 
+    color: black;  
   }
   #eight {
     grid-column: 2 / 3; 
     grid-row: 3 / 4; 
-    background-color: black; 
-    color: white;  
+    background-color: white; 
+    color: black;  
   }
   #nine {
     grid-column: 3 / 4; 
     grid-row: 3 / 4; 
-    background-color: black; 
-    color: white;  
+    background-color: white; 
+    color: black;  
   }
   #minus {
     grid-column: 4 / 5; 
     grid-row: 3 / 4; 
-    background-color: black; 
-    color: white;  
+    background-color: white; 
+    color: black;  
   }
   #four {
     grid-column: 1 / 2; 
     grid-row: 4 / 5; 
-    background-color: black; 
-    color: white;  
+    background-color:white; 
+    color: black;  
   }
   #five {
     grid-column: 2 / 3; 
     grid-row: 4 / 5; 
-    background-color: black; 
-    color: white;  
+    background-color: white; 
+    color: black;  
   }
   #six {
     grid-column: 3 / 4; 
     grid-row: 4 / 5; 
-    background-color: black; 
-    color: white;  
+    background-color: white; 
+    color: black;  
   }
   #plus {
     grid-column: 4 / 5; 
     grid-row: 4 / 5; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #one {
     grid-column: 1 / 2; 
     grid-row: 5 / 6; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #two {
     grid-column: 2 / 3; 
     grid-row: 5 / 6; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #three {
     grid-column: 3 / 4; 
     grid-row: 5 / 6; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #equal {
     grid-column: 4 / 5; 
     grid-row: 5 / 7; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #zero {
     grid-column: 1 / 3; 
     grid-row: 6 / 7; 
-    background-color: black; 
-    color: white; 
+    background-color: white; 
+    color: black; 
   }
   #point {
     grid-column: 3 / 4; 
     grid-row: 6 / 7;
-    background-color: black;
-    color: white; 
+    background-color: white;
+    color: black; 
   }
   /* end of calculator */
   .banner {
