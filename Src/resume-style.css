@@ -1,0 +1,54 @@
+body {
+    background-color: white;
+}
+
+header {
+    background-color: white;
+    text-align: center;
+    padding: 20px;
+  }
+
+h1 {
+    font-size: 30px;
+}
+
+main {
+    width: 70%;
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+}
+div {
+    background-color: white;
+    width: 350px;
+    border: 50px black;
+    padding: 35px;
+    margin: auto;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1500%;
+}
+
+article {
+    margin: auto;
+    text-align: left;
+    font-size: 15px; 
+    background-color: whitesmoke;
+    padding: 40px;
+
+}
+
+h2 {
+    text-align: top center;
+    
+}
+
+.box {
+    margin: left;
+    width: 25%;
+    padding: 2px;
+    height: 700px;
+    float: left;
+  }
+  

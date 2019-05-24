@@ -1,0 +1,34 @@
+body {
+    background-color: turquoise;
+}
+
+main {
+    width: 85%;
+    background-color: white;
+    margin: auto;
+    padding: 70px;
+}
+
+article {
+    width: 65%; 
+    background-color: darkcyan;
+    margin: auto;
+    padding: 4px;
+}
+
+h2 {
+    width: 40%;
+    margin: auto;
+    padding: 3px;
+    font family: serif;
+}
+
+P {
+    font family: Tahoma;
+    margin: auto;
+}
+
+P:first-letter {
+    font-size: 200%;
+    color: black;
+  }

@@ -1,0 +1,50 @@
+body {
+    width: 850px;
+    margin: 0 auto;
+}
+
+main {
+    height: 450px; 
+    margin: 0 auto;
+    background-image: url(https://ak2.picdn.net/shutterstock/videos/7461592/thumb/1.jpg);
+    color: white;
+    font-family: 'Righteous', cursive;
+    font-size: 55px;
+    text-align: center;
+    letter-spacing: 7px;
+    line-height: 420px;
+}
+section {
+    display: flex;
+    height: 324px;
+    flex-direction: row;
+    align-content: flex-start;
+    font-size: 25px;
+    font-family: 'Ropa Sans', sans-serif;
+
+}
+article {
+    width: 270px;
+    height: 324px; 
+    padding: 10px;
+    background-color: lightgray;
+    
+}
+p {
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    padding-right: 45px; 
+    line-height: 30px;
+}
+.box {
+    line-height: 5em;
+}
+form {
+    font-size: 14px; 
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+button {
+    background-color: gray;
+    width: 50%;
+    height: 150%;
+}

@@ -1,0 +1,15 @@
+.container {
+    display: grid;
+    
+}
+
+/*tic-tac-toe box*/
+
+.boxone {
+    grid-area: boxone;
+    height: 60%;
+    background-color: lightgray;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 1fr 1fr 1fr;
+}
